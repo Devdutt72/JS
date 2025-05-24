@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Rock Paper Scissors</h1>
+  <div class="choices">
+    <div class="choice" id="rock"><img src="./images/rock.png" alt="Rock" class="move-img"></div>
+    <div class="choice" id="paper"><img src="./images/paper.png" alt="Paper" class="move-img"></div>
+    <div class="choice" id="scissors"><img src="./images/scissor.png" alt="Scissors" class="move-img"></div>
+  </div>
+  <div class="versus hidden">
+    <div class="move">
+      <p>Player</p>
+      <div id="my-move">
+        <img src="./images/rock.png" alt="Rock" class="move-img my-rock hidden">
+        <img src="./images/paper.png" alt="Paper" class="move-img my-paper hidden">
+        <img src="./images/scissor.png" alt="Scissors" class="move-img my-scissors hidden">
+      </div>
+    </div>
+    <p class="vs">VS</p>
+    <div class="move">
+      <p>Computer</p>
+      <div id="computer-move">
+        <img src="./images/rock.png" alt="Rock" class="move-img computer-rock hidden">
+        <img src="./images/paper.png" alt="Paper" class="move-img computer-paper hidden">
+        <img src="./images/scissor.png" alt="Scissors" class="move-img computer-scissors hidden">
+      </div>
+    </div>
+  </div>
+  <div class="scores">
+    <div class="score">
+      <span id="my-points">0</span>
+      <p>Player</p>
+    </div>
+    <div class="score">
+      <span id="computer-points">0</span>
+      <p>Computer</p>
+    </div>
+  </div>
+  <p id="game-message">Choose your move!</p>
+  <button id="end-game" class="hidden">Finish Game</button>
+  <p id="final-message" class="hidden"></p>
+  <button id="start-again" class="hidden">Start New Game</button>
+  <script src="app.js"></script>
+</body>
+</html>
